@@ -33,7 +33,6 @@
     <section class="top-section">
       <div class="page__wrapper top-section__wrapper">
         <a class="top-section__logo" href="#">
-          <!-- заменить на спрайт -->
           <img src="img/logo.svg" alt="Логотип компании">
         </a>
         <h1>Мы продаем велосипеды</h1>
@@ -52,8 +51,28 @@
     </section>
   </main>
 
-  <footer>
-
+  <footer class="contacts">
+    <div class="page__wrapper contacts__wrapper">
+      <h2 class="page__heading">Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <iframe class="contacts__map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="320" height="457" allowfullscreen
+        title="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        <div class="contacts__links-bar">
+          <a href="mailto:puteshestviemechta@gmail.ru">
+            <svg width="26" height="20" class="contacts__icon contacts__icon--design-fix">
+              <use href="/img/sprite_auto.svg#icon-envelope"></use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
+          <a href="tel:+749978468446">
+            <svg width="17" height="24" class="contacts__icon">
+              <use href="/img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+            +7 (499) -784-684-46</a>
+        </div>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
