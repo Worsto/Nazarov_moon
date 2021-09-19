@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<body class="page__body">
+  <header class="page-header page-header--nojs">
+    <div class="page__wrapper page-header__wrapper">
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav>
+        <ul class="page-header__nav-list">
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Виды велосипедов</a></li>
+          <li><a href="#">Видео про велосипеды</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="top-section">
+      <div class="page__wrapper top-section__wrapper">
+        <a class="top-section__logo" href="#">
+          <!-- заменить на спрайт -->
+          <img src="img/logo.svg" alt="Логотип компании">
+        </a>
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <form class="greeting-form" action="https://echo.htmlacademy.ru/courses">
+          <fieldset>
+            <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+            <input type="text" id="input-name" placeholder="Введите Ваше Имя">
+            <label class="visually-hidden" for="input-name">Имя</label>
+            <input type="text" id="input-number" placeholder="Введите Ваш номер телефона">
+            <label class="visually-hidden" for="input-number">Телефон</label>
+            <button type="submit">Подобрать велосипед мечты</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
