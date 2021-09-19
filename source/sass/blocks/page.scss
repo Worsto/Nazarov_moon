@@ -1,0 +1,32 @@
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--basic-type);
+  font-size: 16px;
+  height: 100%;
+}
+
+.page__body {
+  background-color: var(--clear-background);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: center;
+}
+
+.page__wrapper {
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: $desktop-width;
+
+
+  @media (max-width: $desktop-width) {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

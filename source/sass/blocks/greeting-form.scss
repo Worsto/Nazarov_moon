@@ -1,0 +1,97 @@
+.greeting-form {
+  padding-top: 5px;
+
+  & fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  & legend {
+    color: var(--contrast-type);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: 28px;
+    margin-bottom: 9px;
+
+    @media (max-width: $desktop-width) {
+      color: var(--basic-type);
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 10px;
+      max-width: 400px;
+    }
+  }
+
+  & input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    border: 1px solid var(--form-border);
+    border-radius: 6px;
+
+    @media (max-width: $desktop-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding-left: 25px;
+      padding-right: 20px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::placeholder {
+      color: var(--form-type);
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      opacity: 0.5;
+    }
+  }
+
+  & button {
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 2px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    letter-spacing: 0.005em;
+    background-color: var(--main-accent);
+    cursor: pointer;
+
+    @media (max-width: $desktop-width) {
+      margin-right: 0;
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      margin-top: 9px;
+      width: 100%;
+      max-width: 400px;
+      align-self: center;
+    }
+
+    &:hover {
+      background-color: var(--hover-accent);
+    }
+  }
+}
