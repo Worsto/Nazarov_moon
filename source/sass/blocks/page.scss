@@ -3,6 +3,7 @@
   color: var(--basic-type);
   font-size: 16px;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -36,6 +37,7 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
+  text-align: center;
 
   @media (max-width: $desktop-width) {
     font-size: 24px;

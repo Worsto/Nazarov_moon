@@ -1,14 +1,17 @@
-.contacts__wrapper {
-  max-width: 957px;
-  margin-top: 60px;
-  margin-bottom: 85px;
-  display: flex;
-  flex-direction: column;
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 85px;
 
   @media (max-width: $desktop-width) {
-    margin-top: 20px;
-    margin-bottom: 41px;
+    padding-top: 20px;
+    padding-bottom: 41px;
   }
+}
+
+.contacts__wrapper {
+  max-width: 957px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
@@ -105,7 +108,7 @@
     }
 
     &:hover, &:focus {
-      color: var(--main-accent);
+      color: var(--accent-type);
     }
   }
 
