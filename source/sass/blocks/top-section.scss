@@ -1,12 +1,14 @@
 .top-section {
   background-color: #1b1b1b;
   background-image: url("../../img/main-bg@1x.jpg");
+  background-image: url("../../img/main-bg@1x.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-bg@2x.jpg");
+    background-image: url("../img/main-bg@2x.webp");
   }
 
   @media (max-width: $desktop-width) {
@@ -15,8 +17,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    background-position: center -1px;
-    background-size: 175% auto;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -27,6 +29,10 @@
   padding-bottom: 229px;
   padding-right: 72px;
   padding-left: 72px;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: $desktop-width;
 
   @media (max-width: $desktop-width) {
     display: flex;
@@ -37,7 +43,7 @@
     margin-right: 0;
   }
 
-  & h1 {
+  h1 {
     font-size: 46px;
     font-weight: 700;
     grid-column-start: 1;
@@ -65,7 +71,7 @@
     }
   }
 
-  & p {
+  p {
     grid-column-start: 1;
     color: var(--contrast-type);
     margin-top: 10px;
@@ -92,11 +98,11 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 10px;
-      margin-bottom: 70px;
+      margin-bottom: 71px;
     }
   }
 
-  & form {
+  form {
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 4;

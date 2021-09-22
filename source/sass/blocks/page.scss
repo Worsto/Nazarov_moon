@@ -13,33 +13,3 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: center;
 }
-
-.page__wrapper {
-  position: relative;
-  margin: 0 auto;
-  box-sizing: border-box;
-  max-width: $desktop-width;
-
-
-  @media (max-width: $desktop-width) {
-    margin-left: 35px;
-    margin-right: 35px;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-}
-
-.page__heading {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.005em;
-  text-align: center;
-
-  @media (max-width: $desktop-width) {
-    font-size: 24px;
-  }
-}

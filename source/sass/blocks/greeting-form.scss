@@ -1,7 +1,7 @@
 .greeting-form {
   padding-top: 5px;
 
-  & fieldset {
+  fieldset {
     border: none;
     padding: 0;
     margin: 0;
@@ -9,7 +9,7 @@
     flex-direction: column;
   }
 
-  & legend {
+  legend {
     color: var(--contrast-type);
     text-align: center;
     font-size: 17px;
@@ -30,7 +30,7 @@
     }
   }
 
-  & input {
+  input {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -69,7 +69,7 @@
     }
   }
 
-  & button {
+  button {
     border-radius: 6px;
     border: none;
     margin-top: 10px;

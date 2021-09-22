@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--nojs">
-    <div class="page__wrapper page-header__wrapper">
+    <div class="page-header__wrapper">
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -32,9 +32,9 @@
   </header>
   <main>
     <section class="top-section">
-      <div class="page__wrapper top-section__wrapper">
+      <div class="top-section__wrapper">
         <a class="top-section__logo">
-          <img src="img/logo.svg" alt="Логотип компании">
+          <img width="69" height="21" src="img/logo.svg" alt="Логотип компании">
         </a>
         <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
@@ -43,7 +43,7 @@
             <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
             <input type="text" id="input-name" placeholder="Введите Ваше Имя" autocomplete="off" name="name" required="">
             <label class="visually-hidden" for="input-name">Имя</label>
-            <input type="tel" id="input-number" placeholder="Введите Ваш номер телефона" autocomplete="off" name="number" pattern="*{1}[0-9]{10}" required="">
+            <input type="tel" id="input-number" placeholder="Введите Ваш номер телефона" autocomplete="off" name="phone" pattern="*{1}[0-9]{10}" required="">
             <label class="visually-hidden" for="input-number">Телефон</label>
             <button type="submit">Подобрать велосипед мечты</button>
           </fieldset>
@@ -52,8 +52,8 @@
     </section>
     <section class="advantages">
       <a id="advantages"></a>
-      <div class="page__wrapper advantages__wrapper">
-        <h2 class="advantages__heading page__heading">Несколько фактов о нас</h2>
+      <div class="advantages__wrapper">
+        <h2 class="advantages__heading">Несколько фактов о нас</h2>
         <ol class="advantages__list">
           <li>Самый широкий выбор велосипедов!</li>
           <li>Доставка велосипедов по всей России!</li>
@@ -64,12 +64,16 @@
     </section>
     <section class="catalog">
       <a id="catalog"></a>
-      <div class="page__wrapper catalog__wrapper">
-        <h2 class="page__heading">Виды велосипедов</h2>
+      <div class="catalog__wrapper">
+        <h2 class="catalog__heading">Виды велосипедов</h2>
         <ul class="catalog__list">
           <li>
             <a class="catalog__link catalog__link--roadster" href="#">
               <picture>
+                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-roadsters-tablet@1x.webp 1x, img/category-roadsters-tablet@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/category-roadsters-tablet@1x.jpg 1x, img/category-roadsters-tablet@2x.jpg 2x">
+                <source media="(max-width: 766px)" type="image/webp" srcset="img/category-roadsters-mobile@1x.webp 1x, img/category-roadsters-mobile@2x.webp 2x">
+                <source media="(max-width: 766px)" srcset="img/category-roadsters-mobile@1x.jpg 1x, img/category-roadsters-mobile@2x.jpg 2x">
                 <source type="image/webp" srcset="img/category-roadsters@1x.webp 1x, img/category-roadsters@2x.webp 2x">
                 <img width="342" height="503" srcset="img/category-roadsters@1x.jpg 1x, img/category-roadsters@2x.jpg 2x" src="img/category-roadsters@1x.jpg" alt="Дорожный велосипед">
               </picture>
@@ -79,6 +83,10 @@
           <li>
             <a class="catalog__link catalog__link--mountain" href="#">
               <picture>
+                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-mountain-tablet@1x.webp 1x, img/category-mountain-tablet@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/category-mountain-tablet@1x.jpg 1x, img/category-mountain-tablet@2x.jpg 2x">
+                <source media="(max-width: 766px)" type="image/webp" srcset="img/category-mountain-mobile@1x.webp 1x, img/category-mountain-mobile@2x.webp 2x">
+                <source media="(max-width: 766px)" srcset="img/category-mountain-mobile@1x.jpg 1x, img/category-mountain-mobile@2x.jpg 2x">
                 <source type="image/webp" srcset="img/category-mountain@1x.webp 1x, img/category-mountain@2x.webp 2x">
                 <img width="342" height="566" srcset="img/category-mountain@1x.jpg 1x, img/category-mountain@2x.jpg 2x" src="img/category-mountain@1x.jpg" alt="Горный велосипед">
               </picture>
@@ -88,6 +96,10 @@
           <li>
             <a class="catalog__link catalog__link--kids" href="#">
               <picture>
+                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-kids-tablet@1x.webp 1x, img/category-kids-tablet@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/category-kids-tablet@1x.jpg 1x, img/category-kids-tablet@2x.jpg 2x">
+                <source media="(max-width: 766px)" type="image/webp" srcset="img/category-kids-mobile@1x.webp 1x, img/category-kids-mobile@2x.webp 2x">
+                <source media="(max-width: 766px)" srcset="img/category-kids-mobile@1x.jpg 1x, img/category-kids-mobile@2x.jpg 2x">
                 <source type="image/webp" srcset="img/category-kids@1x.webp 1x, img/category-kids@2x.webp 2x">
                 <img width="342" height="513" srcset="img/category-kids@1x.jpg 1x, img/category-kids@2x.jpg 2x" src="img/category-kids@1x.jpg" alt="Детский велосипед">
               </picture>
@@ -99,8 +111,8 @@
     </section>
     <section class="video">
       <a id="video"></a>
-      <div class="page__wrapper video__wrapper">
-        <h2 class="page__heading video__heading">Видео про велосипеды</h2>
+      <div class="video__wrapper">
+        <h2 class="video__heading">Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
         <div class="video__box">
           <a class="video__play" aria-label="Играть"></a>
@@ -115,8 +127,8 @@
 
   <footer class="contacts">
     <a id="contacts"></a>
-    <div class="page__wrapper contacts__wrapper">
-      <h2 class="page__heading">Как нас найти?</h2>
+    <div class="contacts__wrapper">
+      <h2 class="contacts__heading">Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="457" allowfullscreen="" title="Офис интернет-магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <div class="contacts__links-bar">
