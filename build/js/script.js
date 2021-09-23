@@ -2,7 +2,7 @@
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
 
-if (pageHeader !== null && headerToggle !== null) {
+if (pageHeader && headerToggle) {
   pageHeader.classList.remove('page-header--nojs');
   pageHeader.classList.add('page-header--closed');
   pageHeader.classList.remove('page-header--opened');

@@ -16,6 +16,8 @@
 
 <body class="page__body">
   <header class="page-header page-header--nojs">
+    <!-- .page-header--opened - меню открыто -->
+    <!-- .page-header--closed - меню закрыто -->
     <div class="page-header__wrapper">
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -33,11 +35,13 @@
   <main>
     <section class="top-section">
       <div class="top-section__wrapper">
-        <a class="top-section__logo">
-          <img width="69" height="21" src="img/logo.svg" alt="Логотип компании">
-        </a>
-        <h1>Мы продаем велосипеды</h1>
-        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <div class="top-section__text-box">
+          <a class="top-section__logo">
+            <img width="69" height="21" src="img/logo.svg" alt="Логотип компании">
+          </a>
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
         <form class="greeting-form" action="https://echo.htmlacademy.ru/courses">
           <fieldset>
             <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
@@ -70,10 +74,10 @@
           <li>
             <a class="catalog__link catalog__link--roadster" href="#">
               <picture>
-                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-roadsters-tablet@1x.webp 1x, img/category-roadsters-tablet@2x.webp 2x">
-                <source media="(max-width: 1024px)" srcset="img/category-roadsters-tablet@1x.jpg 1x, img/category-roadsters-tablet@2x.jpg 2x">
-                <source media="(max-width: 766px)" type="image/webp" srcset="img/category-roadsters-mobile@1x.webp 1x, img/category-roadsters-mobile@2x.webp 2x">
-                <source media="(max-width: 766px)" srcset="img/category-roadsters-mobile@1x.jpg 1x, img/category-roadsters-mobile@2x.jpg 2x">
+                <!-- 1х: 270px/300px; 2x: 540px/600px -->
+                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-roadsters-mobile@1x.webp 1x, img/category-roadsters-mobile@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/category-roadsters-mobile@1x.jpg 1x, img/category-roadsters-mobile@2x.jpg 2x">
+                <!-- 1х: 342px/503px; 2x: 684px/1006px -->
                 <source type="image/webp" srcset="img/category-roadsters@1x.webp 1x, img/category-roadsters@2x.webp 2x">
                 <img width="342" height="503" srcset="img/category-roadsters@1x.jpg 1x, img/category-roadsters@2x.jpg 2x" src="img/category-roadsters@1x.jpg" alt="Дорожный велосипед">
               </picture>
@@ -83,11 +87,11 @@
           <li>
             <a class="catalog__link catalog__link--mountain" href="#">
               <picture>
-                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-mountain-tablet@1x.webp 1x, img/category-mountain-tablet@2x.webp 2x">
-                <source media="(max-width: 1024px)" srcset="img/category-mountain-tablet@1x.jpg 1x, img/category-mountain-tablet@2x.jpg 2x">
-                <source media="(max-width: 766px)" type="image/webp" srcset="img/category-mountain-mobile@1x.webp 1x, img/category-mountain-mobile@2x.webp 2x">
-                <source media="(max-width: 766px)" srcset="img/category-mountain-mobile@1x.jpg 1x, img/category-mountain-mobile@2x.jpg 2x">
-                <source type="image/webp" srcset="img/category-mountain@1x.webp 1x, img/category-mountain@2x.webp 2x">
+                <!-- 1х: 270px/300px; 2x: 540px/600px -->
+                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-mountain-mobile@1x.webp 1x, img/category-mountain-mobile@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/category-mountain-mobile@1x.jpg 1x, img/category-mountain-mobile@2x.jpg 2x">
+                <!-- 1х: 342px/566px; 2x: 684px/1132px -->
+                  <source type="image/webp" srcset="img/category-mountain@1x.webp 1x, img/category-mountain@2x.webp 2x">
                 <img width="342" height="566" srcset="img/category-mountain@1x.jpg 1x, img/category-mountain@2x.jpg 2x" src="img/category-mountain@1x.jpg" alt="Горный велосипед">
               </picture>
               <h3>Горный велосипед</h3>
@@ -96,11 +100,11 @@
           <li>
             <a class="catalog__link catalog__link--kids" href="#">
               <picture>
-                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-kids-tablet@1x.webp 1x, img/category-kids-tablet@2x.webp 2x">
-                <source media="(max-width: 1024px)" srcset="img/category-kids-tablet@1x.jpg 1x, img/category-kids-tablet@2x.jpg 2x">
-                <source media="(max-width: 766px)" type="image/webp" srcset="img/category-kids-mobile@1x.webp 1x, img/category-kids-mobile@2x.webp 2x">
-                <source media="(max-width: 766px)" srcset="img/category-kids-mobile@1x.jpg 1x, img/category-kids-mobile@2x.jpg 2x">
-                <source type="image/webp" srcset="img/category-kids@1x.webp 1x, img/category-kids@2x.webp 2x">
+                <!-- 1х: 270px/300px; 2x: 540px/600px -->
+                <source media="(max-width: 1024px)" type="image/webp" srcset="img/category-kids-mobile@1x.webp 1x, img/category-kids-mobile@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/category-kids-mobile@1x.jpg 1x, img/category-kids-mobile@2x.jpg 2x">
+                <!-- 1х: 342px/513px; 2x: 684px/1026px -->
+                  <source type="image/webp" srcset="img/category-kids@1x.webp 1x, img/category-kids@2x.webp 2x">
                 <img width="342" height="513" srcset="img/category-kids@1x.jpg 1x, img/category-kids@2x.jpg 2x" src="img/category-kids@1x.jpg" alt="Детский велосипед">
               </picture>
               <h3>Детский велосипед</h3>

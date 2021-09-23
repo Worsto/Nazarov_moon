@@ -17,6 +17,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    background-image: none;
     background-position: center;
     background-size: cover;
   }
@@ -43,11 +44,52 @@
     margin-right: 0;
   }
 
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  form {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    position: relative;
+
+    @media (max-width: $desktop-width) {
+      background-color: var(--main-background);
+      padding-top: 70px;
+      padding-bottom: 35px;
+      padding-left: 29.2%;
+      padding-right: 28.9%;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+.top-section__text-box {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../../img/main-bg@1x.jpg");
+    background-image: url("../../img/main-bg@1x.webp");
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-bg@2x.jpg");
+      background-image: url("../img/main-bg@2x.webp");
+    }
+  }
+
   h1 {
     font-size: 46px;
     font-weight: 700;
-    grid-column-start: 1;
-    margin-top: 27px;
+    margin-top: 26px;
     margin-bottom: 15px;
     line-height: 64px;
     letter-spacing: -0.005em;
@@ -56,14 +98,14 @@
     @media (max-width: $desktop-width) {
       text-align: center;
       font-size: 30px;
-      margin-top: 75px;
+      margin-top: 74px;
       margin-right: 20%;
       margin-left: 20%;
       margin-bottom: 4px;
     }
 
     @media (max-width: $tablet-width) {
-      margin-top: 72px;
+      margin-top: 71px;
       margin-left: 17px;
       margin-right: 17px;
       margin-bottom: 9px;
@@ -72,7 +114,6 @@
   }
 
   p {
-    grid-column-start: 1;
     color: var(--contrast-type);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -99,26 +140,6 @@
       margin-right: auto;
       margin-top: 10px;
       margin-bottom: 71px;
-    }
-  }
-
-  form {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    position: relative;
-
-    @media (max-width: $desktop-width) {
-      background-color: var(--main-background);
-      padding-top: 70px;
-      padding-bottom: 35px;
-      padding-left: 29.2%;
-      padding-right: 28.9%;
-    }
-
-    @media (max-width: $tablet-width) {
-      padding-left: 16px;
-      padding-right: 16px;
     }
   }
 }
