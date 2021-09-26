@@ -124,7 +124,7 @@
     border-bottom: 9.1px solid transparent;
     border-left: 13px solid #070707;
     left: calc(50% - 3px);
-    top: calc(50% - 9px);
+    top: calc(50% - 10px);
     z-index: 1;
 
     @media (max-width: $desktop-width) {
@@ -144,7 +144,7 @@
     }
   }
 
-  &:hover::before {
+  &:hover::before, &:focus::before {
     background-color: var(--hover-accent);
   }
 }

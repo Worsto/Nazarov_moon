@@ -41,12 +41,12 @@
   &--opened {
     .page-header__nav-list {
       @media (max-width: $desktop-width) {
-        position: absolute;
+        position: fixed;
         padding-right: 0;
         padding-left: 0;
         width: 100%;
         right: 0;
-        min-height: 563px;
+        min-height: 100vh;
         flex-direction: column;
         justify-content: center;
 
@@ -76,6 +76,7 @@
 
     .page-header__toggle {
       background-color: transparent;
+      position: fixed;
 
       &::before,
       &::after {
@@ -110,7 +111,7 @@
   position: relative;
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: $desktop-width;
+  max-width: 1024px;
 
   @media (max-width: $desktop-width) {
     margin-left: 0;
@@ -138,18 +139,28 @@
 
 .page-header__nav-list {
   position: absolute;
-  max-width: 874px;
+  max-width: 967px;
   width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 75px;
-  margin-left: 75px;
+  justify-content: start;
+  margin-right: 28px;
+  margin-left: 28px;
   z-index: 1;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 874px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    left: 47px;
+    bottom: 0;
+  }
 
   a {
     color: var(--contrast-type);
@@ -206,6 +217,15 @@
       color: var(--hover-accent);
       opacity: 1;
       border-bottom: 2px solid var(--hover-accent);
+    }
+  }
+
+  li {
+    padding-left: 47px;
+    padding-right: 47px;
+
+    @media (max-width: $desktop-width) {
+      padding: 0;
     }
   }
 

@@ -1,7 +1,7 @@
 .top-section {
   background-color: #1b1b1b;
-  background-image: url("../../img/main-bg@1x.jpg");
-  background-image: url("../../img/main-bg@1x.webp");
+  background-image: url("../img/main-bg@1x.jpg");
+  background-image: url("../img/main-bg@1x.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,8 +74,8 @@
   flex-direction: column;
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/main-bg@1x.jpg");
-    background-image: url("../../img/main-bg@1x.webp");
+    background-image: url("../img/main-bg@1x.jpg");
+    background-image: url("../img/main-bg@1x.webp");
     background-size: cover;
     background-position: center;
     padding-top: 25px;
